@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odi</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    top: 150px;
+    background-color: white;
+}
+
+.tallo {
+    position: relative;
+    width: 15px;
+    height: 400px;
+    left: 235px;
+    background-color: green;
+    color: green;
+    box-shadow: 1px 1px;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.petalo {
+    position: absolute;
+    width: 85px;
+    height: 150px;
+    top: -250px;
+    left: -35px;
+    background-color: yellow;
+    box-shadow: 0 150px;
+    filter: drop-shadow(1px 1px 1px yellow);
+    border-radius: 50%;
+    color: yellow;
+}
+
+.petalo::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 150px;
+    left: -90px;
+    top: 75px;
+    background-color: yellow;
+    box-shadow: 0 190px;
+    filter: drop-shadow(1px 1px 1px yellow);
+    border-radius: 50%;
+    color: yellow;
+    transform: rotate(-90deg);
+}
+
+.centro {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: -8px;
+    top: 100px;
+    border-radius: 50%;
+    background-color: black;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.rotar-45 {
+    transform: rotate(-45deg);
+    left: -90px;
+    top: -230px;
+}
+
+.hoja {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    border-radius: 92% 10% 87% 10% / 67% 10% 93% 20% ;
+    background-color: greenyellow;
+}
+
+body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+        }
+    </style>
+
+</head>
+    <h1>Hola Heydi</h1>
+    <h3>Feliz Navidad</h3>
+    <p>(xd)</p>
+<body>
+    <div class="tallo">
+        <div class="petalo rotar-45">
+        </div>
+        <div class="petalo">
+            <div class="centro">
+                <div class="hoja" style="top: 250px; left: 55px;"></div>
+                
+            </div>
+        </div>
+        <div class="hoja" style="top: 180px; transform: rotate(-60deg); left: -45px;"></div>    
+    </div>
+    
+    <p>El plan era que se viera así :'v</p>
+    <img src="https://th.bing.com/th/id/R.902a7f0ca97b2a2d0e877fb91bf267c8?rik=a7aC2h6DXzBJWg&pid=ImgRaw&r=0" alt="Ramo de girasoles" style="width: 150px; height: auto;">
+
+</body>
+</html>
